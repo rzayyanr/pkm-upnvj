@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
+/*
+  Design token PKM UPNVJ — di-sampling dari logo resmi UPNVJ
+  (Wikimedia Commons, CC BY-SA):
+  hijau topi baja #006030, kuning dasar #F8F800, merah api #F80000.
+  Skala di sekitar 3 warna dasar itu untuk kebutuhan UI (kontras WCAG AA).
+*/
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+@theme {
+  /* Hijau veteran (utama) */
+  --color-veteran-50: #eef9f3;
+  --color-veteran-100: #d8f1e4;
+  --color-veteran-200: #a5e0c4;
+  --color-veteran-300: #6bcd9c;
+  --color-veteran-400: #35b576;
+  --color-veteran-500: #0e9650;
+  --color-veteran-600: #0a7a3e;
+  --color-veteran-700: #006030; /* warna asli logo */
+  --color-veteran-800: #004d27;
+  --color-veteran-900: #003d1f;
+
+  /* Kuning emas (aksen) */
+  --color-emas-50: #fdfbe6;
+  --color-emas-100: #faf5c0;
+  --color-emas-200: #f5ea8a;
+  --color-emas-300: #f0dc4d;
+  --color-emas-400: #eacb1f;
+  --color-emas-500: #d9b800;
+  --color-emas-600: #b89400;
+  --color-emas-700: #8f7200;
+
+  /* Merah api (deadline mendesak / error) */
+  --color-api-500: #f80000;
+  --color-api-600: #d40000;
+  --color-api-700: #a80000;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

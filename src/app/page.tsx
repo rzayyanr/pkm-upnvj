@@ -1,22 +1,30 @@
+import { ButtonLink } from "@/components/ui/Button";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-center gap-6 py-32 px-8 text-center">
-        <span className="rounded-full bg-emerald-100 px-4 py-1 text-sm font-medium text-emerald-800">
-          Sedang dibangun 🚧
-        </span>
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
-          PKM UPNVJ
-        </h1>
-        <p className="max-w-xl text-lg leading-8 text-zinc-600">
-          Pusat informasi Program Kreativitas Mahasiswa untuk mahasiswa UPN
-          Veteran Jakarta — 10 bidang PKM, tahapan pendaftaran, tema, tips
-          proposal, dan panduan resmi 2026.
+    <>
+      <section className="bg-veteran-800 text-white">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-20 sm:px-6 sm:py-28">
+          <h1 className="max-w-2xl font-heading text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+            Semua yang perlu kamu tahu tentang PKM di UPNVJ
+          </h1>
+          <p className="max-w-xl text-lg leading-8 text-veteran-100">
+            Dari memilih bidang sampai melangkah ke PIMNAS — panduan resmi,
+            jadwal terkini, dan tips proposal dalam satu tempat.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <ButtonLink href="/komponen" size="lg" className="bg-white text-veteran-800 hover:bg-veteran-50">
+              Lihat demo komponen
+            </ButtonLink>
+          </div>
+        </div>
+      </section>
+      <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
+        <p className="rounded-xl bg-emas-50 px-5 py-4 text-sm leading-6 text-emas-700">
+          🚧 Website sedang dibangun bertahap — tiket 02 (design system) selesai,
+          konten panduan menyusul di tiket berikutnya.
         </p>
-        <p className="text-sm text-zinc-400">
-          Tiket 01 (Fondasi) — konten menyusul di tiket berikutnya.
-        </p>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
