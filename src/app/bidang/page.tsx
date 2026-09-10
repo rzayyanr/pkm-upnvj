@@ -50,11 +50,6 @@ export default function BidangPage() {
           </Link>
         ))}
       </div>
-
-      <p className="mt-8 rounded-xl bg-emas-50 px-5 py-4 text-sm leading-6 text-emas-700">
-        🚧 8 bidang lainnya (PKM-K, PM, PI, KC, KI, VGK, GFT, AI) sedang dalam
-        proses penambahan — kontennya diekstrak dari panduan resmi masing-masing.
-      </p>
     </div>
   );
 }
