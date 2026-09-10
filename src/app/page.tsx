@@ -3,8 +3,18 @@ import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PlaceholderBanner } from "@/components/ui/PlaceholderBanner";
 import { daftarBidang } from "@/data/bidang";
+import { ambilAgendaMendatang, ambilPengumumanTerbaru } from "@/lib/konten";
 
-export default function Home() {
+const formatTanggal = new Intl.DateTimeFormat("id-ID", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+export default async function Home() {
+  const hasilPengumuman = await ambilPengumumanTerbaru();
+  const hasilAgenda = await ambilAgendaMendatang();
+
   return (
     <>
       <section className="bg-veteran-800 text-white">
@@ -33,27 +43,66 @@ export default function Home() {
             <h2 className="font-heading text-base font-semibold text-zinc-900">
               Pengumuman
             </h2>
-            <p className="mt-2 text-sm leading-6 text-zinc-600">
-              Pengumuman resmi kampus akan tampil di sini.
-            </p>
+            {hasilPengumuman.ok ? (
+              <ul className="mt-3 space-y-3">
+                {hasilPengumuman.data.map((p) => (
+                  <li key={p.id} className="text-sm leading-6 text-zinc-700">
+                    <span className="font-semibold text-zinc-900">
+                      {p.judul}
+                    </span>
+                    {p.penting ? (
+                      <span className="ml-2 rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-api-700">
+                        Penting
+                      </span>
+                    ) : null}
+                    <p className="mt-0.5 text-zinc-600">{p.isi}</p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-2 text-sm leading-6 text-zinc-600">
+                Belum ada pengumuman yang bisa ditampilkan sekarang.
+              </p>
+            )}
           </div>
           <div className="rounded-2xl border border-zinc-200 bg-white p-6">
             <h2 className="font-heading text-base font-semibold text-zinc-900">
-              Deadline terdekat
+              Agenda terdekat
             </h2>
-            <p className="mt-2 text-sm leading-6 text-zinc-600">
-              Agenda dan batas waktu penting akan tampil di sini.
-            </p>
+            {hasilAgenda.ok ? (
+              <ul className="mt-3 space-y-2.5">
+                {hasilAgenda.data.map((a) => (
+                  <li key={a.id} className="text-sm leading-6 text-zinc-700">
+                    <span className="font-semibold text-zinc-900">
+                      {a.judul}
+                    </span>
+                    <p className="text-zinc-500">
+                      {formatTanggal.format(new Date(a.tanggal_mulai))}
+                      {a.tanggal_selesai
+                        ? ` – ${formatTanggal.format(new Date(a.tanggal_selesai))}`
+                        : ""}
+                      {a.lokasi ? ` · ${a.lokasi}` : ""}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-2 text-sm leading-6 text-zinc-600">
+                Agenda dan batas waktu penting akan tampil di sini.
+              </p>
+            )}
           </div>
         </div>
-        <div className="mt-4">
-          <PlaceholderBanner>
-            jadwal seleksi internal UPNVJ tahun 2027 belum diumumkan — bagian
-            pengumuman dan deadline di atas akan diisi langsung oleh pengelola
-            PKM UPNVJ (UPT PKK/CDE) tanpa perlu deploy ulang, begitu panel admin
-            aktif.
-          </PlaceholderBanner>
-        </div>
+        {!hasilPengumuman.ok || !hasilAgenda.ok ? (
+          <div className="mt-4">
+            <PlaceholderBanner>
+              jadwal seleksi internal UPNVJ tahun 2027 belum diumumkan — bagian
+              pengumuman dan agenda di atas akan diisi langsung oleh pengelola
+              PKM UPNVJ (UPT PKK/CDE) tanpa perlu deploy ulang, begitu panel
+              admin aktif.
+            </PlaceholderBanner>
+          </div>
+        ) : null}
       </section>
 
       <section className="border-t border-zinc-200 bg-zinc-50">

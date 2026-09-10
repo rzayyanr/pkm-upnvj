@@ -1,15 +1,43 @@
 import Link from "next/link";
+import { ambilKontak, ambilTautanCepat } from "@/lib/konten";
+import type { Kontak, TautanCepat } from "@/lib/konten";
 
-const tautanResmi = [
+/*
+  Nilai bawaan saat database gagal/pause (FR-11): footer tetap utuh
+  memakai data statis yang sudah terverifikasi dari riset.
+*/
+const kontakBawaan: Kontak[] = [
   {
-    href: "https://simbelmawa.kemdiktisaintek.go.id/pkm/",
-    label: "Simbelmawa PKM (pendaftaran resmi)",
+    id: "default",
+    nama_unit: "UPT Pengembangan Karir dan Kewirausahaan (CDE)",
+    email: "cde@upnvj.ac.id",
+    telepon: null,
+    instagram: "https://www.instagram.com/cde.upnvj/",
+    alamat: "Gedung R.A. Kartini lantai 1, Kampus UPNVJ",
+    jam_layanan: null,
   },
-  { href: "https://kemdiktisaintek.go.id", label: "Kemdiktisaintek" },
-  { href: "https://s.id/PanduanGenAI", label: "Panduan GenAI Belmawa" },
 ];
 
-export function Footer() {
+const tautanBawaan: TautanCepat[] = [
+  {
+    id: "1",
+    judul: "Simbelmawa PKM (pendaftaran resmi)",
+    url: "https://simbelmawa.kemdiktisaintek.go.id/pkm/",
+    deskripsi: null,
+  },
+  { id: "2", judul: "Kemdiktisaintek", url: "https://kemdiktisaintek.go.id", deskripsi: null },
+  { id: "3", judul: "Panduan GenAI Belmawa", url: "https://s.id/PanduanGenAI", deskripsi: null },
+];
+
+export async function Footer() {
+  const [hasilKontak, hasilTautan] = await Promise.all([
+    ambilKontak(),
+    ambilTautanCepat(),
+  ]);
+  const kontak = hasilKontak.ok ? hasilKontak.data : kontakBawaan;
+  const tautan = hasilTautan.ok ? hasilTautan.data : tautanBawaan;
+  const utama = kontak[0];
+
   return (
     <footer className="mt-auto border-t border-zinc-200 bg-zinc-50">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
@@ -32,26 +60,30 @@ export function Footer() {
             Kontak pengelola PKM UPNVJ
           </h2>
           <ul className="mt-3 space-y-2 text-sm text-zinc-600">
-            <li>UPT Pengembangan Karir dan Kewirausahaan (CDE)</li>
-            <li>
-              <a
-                href="mailto:cde@upnvj.ac.id"
-                className="text-veteran-700 underline-offset-2 hover:underline"
-              >
-                cde@upnvj.ac.id
-              </a>
-            </li>
-            <li>Gedung R.A. Kartini lantai 1, Kampus UPNVJ</li>
-            <li>
-              <a
-                href="https://www.instagram.com/cde.upnvj/"
-                className="text-veteran-700 underline-offset-2 hover:underline"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Instagram @cde.upnvj
-              </a>
-            </li>
+            {utama ? <li>{utama.nama_unit}</li> : null}
+            {utama ? (
+              <li>
+                <a
+                  href={`mailto:${utama.email}`}
+                  className="text-veteran-700 underline-offset-2 hover:underline"
+                >
+                  {utama.email}
+                </a>
+              </li>
+            ) : null}
+            {utama?.alamat ? <li>{utama.alamat}</li> : null}
+            {utama?.instagram ? (
+              <li>
+                <a
+                  href={utama.instagram}
+                  className="text-veteran-700 underline-offset-2 hover:underline"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Instagram @cde.upnvj
+                </a>
+              </li>
+            ) : null}
           </ul>
         </div>
 
@@ -60,15 +92,15 @@ export function Footer() {
             Tautan resmi
           </h2>
           <ul className="mt-3 space-y-2 text-sm">
-            {tautanResmi.map((t) => (
-              <li key={t.href}>
+            {tautan.map((t) => (
+              <li key={t.id}>
                 <a
-                  href={t.href}
+                  href={t.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-veteran-700 underline-offset-2 hover:underline"
                 >
-                  {t.label}
+                  {t.judul}
                 </a>
               </li>
             ))}

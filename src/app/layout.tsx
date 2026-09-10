@@ -28,6 +28,10 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
 
+// Semua halaman statis dengan ISR 5 menit — konten dinamis segar,
+// dan halaman tetap tersaji dari cache saat database mati (FR-11).
+export const revalidate = 300;
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html

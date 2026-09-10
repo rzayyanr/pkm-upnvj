@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TimelineItem } from "@/components/ui/TimelineItem";
 import { PlaceholderBanner } from "@/components/ui/PlaceholderBanner";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ambilAgendaMendatang } from "@/lib/konten";
 
 export const metadata: Metadata = {
   title: "Alur PKM 2026",
@@ -9,7 +10,15 @@ export const metadata: Metadata = {
     "Tahapan PKM 2026 dari penyusunan proposal sampai PIMNAS: evaluasi internal, unggah simbelmawa, penilaian 2 tahap, pelaksanaan, PKP2, laporan akhir.",
 };
 
-export default function AlurPage() {
+const formatTanggal = new Intl.DateTimeFormat("id-ID", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+export default async function AlurPage() {
+  const hasilAgenda = await ambilAgendaMendatang();
+
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
       <SectionHeading
@@ -26,6 +35,31 @@ export default function AlurPage() {
           pengumuman resmi.
         </PlaceholderBanner>
       </div>
+
+      {hasilAgenda.ok ? (
+        <section className="mt-8" aria-label="Agenda resmi mendatang">
+          <div className="rounded-2xl border border-veteran-200 bg-veteran-50 px-6 py-5">
+            <h2 className="font-heading text-base font-semibold text-veteran-800">
+              Agenda resmi mendatang
+            </h2>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {hasilAgenda.data.map((a) => (
+                <li key={a.id} className="text-sm leading-6 text-veteran-900">
+                  <span className="font-semibold">{a.judul}</span>
+                  <span className="text-veteran-700">
+                    {" "}
+                    — {formatTanggal.format(new Date(a.tanggal_mulai))}
+                    {a.tanggal_selesai
+                      ? ` – ${formatTanggal.format(new Date(a.tanggal_selesai))}`
+                      : ""}
+                    {a.lokasi ? ` · ${a.lokasi}` : ""}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       <ol className="mt-10 max-w-2xl list-none">
         <TimelineItem
