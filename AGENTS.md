@@ -29,6 +29,7 @@ Next.js App Router + TypeScript + Tailwind CSS; hosting Vercel (Hobby); konten d
 4. **Secrets hanya di `.env.local`** (tidak pernah di kode/git). Kunci `service_role` Supabase hanya di server; kunci `anon` boleh di klien karena RLS yang menjaga.
 5. **Konten yang diketik admin tidak pernah dirender sebagai HTML mentah**, tanpa `dangerouslySetInnerHTML` untuk data dari database.
 6. **Palet warna = identitas UPNVJ: hijau veteran (utama) + kuning emas (aksen)**, di-sampling dari file logo resmi UPNVJ, bukan navy/biru.
+7. **Gaya tulis konten tanpa simbol khas AI.** Jangan pakai em dash, en dash, maupun titik tengah (·) di teks atau komentar. Rentang angka memakai tanda hubung biasa seperti dokumen resmi panduan ("3-5 mahasiswa", "halaman 8-15"); rentang tanggal antarnama bulan memakai kata "sampai".
 
 ## Perintah
 
