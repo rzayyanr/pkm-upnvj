@@ -76,6 +76,12 @@ export async function alihkanPengumuman(id: string, aktif: boolean) {
   revalidatePath("/", "layout");
 }
 
+export async function hapusPengumuman(id: string) {
+  const { klien } = await wajibAdmin();
+  await klien.from("pengumuman").delete().eq("id", id);
+  revalidatePath("/", "layout");
+}
+
 export async function simpanAgenda(formData: FormData) {
   const { klien } = await wajibAdmin();
   const id = teks(formData, "id");
@@ -100,5 +106,11 @@ export async function simpanAgenda(formData: FormData) {
 export async function alihkanAgenda(id: string, aktif: boolean) {
   const { klien } = await wajibAdmin();
   await klien.from("agenda_deadline").update({ aktif }).eq("id", id);
+  revalidatePath("/", "layout");
+}
+
+export async function hapusAgenda(id: string) {
+  const { klien } = await wajibAdmin();
+  await klien.from("agenda_deadline").delete().eq("id", id);
   revalidatePath("/", "layout");
 }

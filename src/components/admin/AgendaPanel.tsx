@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/Button";
 import { Field, Input, Textarea } from "@/components/ui/Form";
 import type { AgendaAdmin } from "@/lib/admin";
-import { simpanAgenda, alihkanAgenda } from "@/app/admin/actions";
+import { simpanAgenda, alihkanAgenda, hapusAgenda } from "@/app/admin/actions";
 
 function FormulirAgenda({ data }: { data?: AgendaAdmin }) {
   const kunci = data?.id ?? "baru";
@@ -133,6 +133,23 @@ export function AgendaPanel({ daftar }: { daftar: AgendaAdmin[] }) {
                 </summary>
                 <div className="mt-3 rounded-xl bg-zinc-50 p-4">
                   <FormulirAgenda data={a} />
+                </div>
+              </details>
+              <details className="w-full">
+                <summary className="cursor-pointer text-sm font-medium text-api-700">
+                  Hapus permanen
+                </summary>
+                <div className="mt-3 rounded-xl border border-red-200 bg-red-50 p-4">
+                  <p className="text-sm leading-6 text-zinc-700">
+                    Yakin ingin menghapus permanen? Data tidak bisa
+                    dikembalikan. Kalau hanya ingin menyembunyikannya dari
+                    pengunjung, gunakan tombol Sembunyikan saja.
+                  </p>
+                  <form action={hapusAgenda.bind(null, a.id)} className="mt-3">
+                    <Button type="submit" size="sm" variant="danger">
+                      Ya, hapus permanen
+                    </Button>
+                  </form>
                 </div>
               </details>
             </div>

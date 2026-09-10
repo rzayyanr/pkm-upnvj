@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "white" | "onDark";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "white" | "onDark" | "danger";
 type ButtonSize = "sm" | "md" | "lg";
 
 const base =
@@ -15,6 +15,7 @@ const variants: Record<ButtonVariant, string> = {
   white: "bg-white text-veteran-800 hover:bg-veteran-50",
   onDark:
     "border border-white text-white hover:bg-veteran-700 bg-transparent",
+  danger: "bg-api-500 text-white hover:bg-api-600",
 };
 
 const sizes: Record<ButtonSize, string> = {

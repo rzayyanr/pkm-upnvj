@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/Button";
 import { Field, Input, Textarea } from "@/components/ui/Form";
 import type { PengumumanAdmin } from "@/lib/admin";
-import { simpanPengumuman, alihkanPengumuman } from "@/app/admin/actions";
+import { simpanPengumuman, alihkanPengumuman, hapusPengumuman } from "@/app/admin/actions";
 
 const formatTanggal = new Intl.DateTimeFormat("id-ID", {
   day: "numeric",
@@ -116,6 +116,23 @@ export function PengumumanPanel({ daftar }: { daftar: PengumumanAdmin[] }) {
                 </summary>
                 <div className="mt-3 rounded-xl bg-zinc-50 p-4">
                   <FormulirPengumuman data={p} />
+                </div>
+              </details>
+              <details className="w-full">
+                <summary className="cursor-pointer text-sm font-medium text-api-700">
+                  Hapus permanen
+                </summary>
+                <div className="mt-3 rounded-xl border border-red-200 bg-red-50 p-4">
+                  <p className="text-sm leading-6 text-zinc-700">
+                    Yakin ingin menghapus permanen? Data tidak bisa
+                    dikembalikan. Kalau hanya ingin menyembunyikannya dari
+                    pengunjung, gunakan tombol Sembunyikan saja.
+                  </p>
+                  <form action={hapusPengumuman.bind(null, p.id)} className="mt-3">
+                    <Button type="submit" size="sm" variant="danger">
+                      Ya, hapus permanen
+                    </Button>
+                  </form>
                 </div>
               </details>
             </div>
