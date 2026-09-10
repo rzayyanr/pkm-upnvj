@@ -1,4 +1,4 @@
-# BRD — Business Requirements Document Website PKM UPNVJ
+# BRD, Business Requirements Document Website PKM UPNVJ
 
 > Ringkasan tingkat bisnis/proyek. Detail produk ada di [[PRD]] (sumber kebenaran);
 > detail syarat di [[FRS-SRS]]; detail data di [[ERD]]. Tanggal: 2026-09-10.
@@ -8,7 +8,7 @@
 Informasi Program Kreativitas Mahasiswa (PKM) di lingkungan UPN Veteran Jakarta
 tersebar dan sulit diakses, padahal PKM didorong kuat oleh kampus dan menjadi
 salah satu indikator capaian mahasiswa (status "syarat kelulusan" perlu
-konfirmasi resmi — lihat `research/info-publik-upnvj.md`). Situs PKM resmi yang
+konfirmasi resmi, lihat `research/info-publik-upnvj.md`). Situs PKM resmi yang
 ada (Google Sites UPT PKK/CDE) sudah usang: tautan unduhan mati, tanpa jadwal
 dan kontak terkini.
 
@@ -56,4 +56,4 @@ ketiga, hosting kampus, integrasi simbelmawa, multi-bahasa, aplikasi mobile
 | Supabase Free pause (7 hari tanpa aktivitas) | Konten dinamis hilang sementara | Website terus dikunjungi; halaman statis tetap tampil (FR-11); aktivasi ulang via dashboard |
 | Klaim "PKM syarat lulus" belum terverifikasi | Info menyesatkan | Rumusan hati-hati + konfirmasi ke CDE (pertanyaan siap di riset) |
 | Ketergantungan akun pribadi | Website terhenti saat pemilik tidak aktif | Saat ini diterima (proyek portofolio); transfer repo bila diserahkan ke unit |
-| Panduan baru terbit (PKM 2027) | Konten basi | Konten terpusat di file data — pembaruan setahun sekali cukup edit data (NFR-08) |
+| Panduan baru terbit (PKM 2027) | Konten basi | Konten terpusat di file data, pembaruan setahun sekali cukup edit data (NFR-08) |

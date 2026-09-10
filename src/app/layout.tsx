@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "PKM UPNVJ — Semua yang Perlu Kamu Tahu tentang PKM",
+    default: "PKM UPNVJ, Semua yang Perlu Kamu Tahu tentang PKM",
     template: "%s | PKM UPNVJ",
   },
   description:
@@ -28,7 +28,7 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
 
-// Semua halaman statis dengan ISR 5 menit — konten dinamis segar,
+// Semua halaman statis dengan ISR 5 menit, konten dinamis segar,
 // dan halaman tetap tersaji dari cache saat database mati (FR-11).
 export const revalidate = 300;
 

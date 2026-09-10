@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 /*
   Ringkasan 10 tema dari Panduan Umum PKM 2026 (bagian Karakteristik Umum,
-  halaman 6–8). Setiap ringkasan dipadatkan dari penjelasan resmi tema.
+  halaman 6-8). Setiap ringkasan dipadatkan dari penjelasan resmi tema.
 */
 
 const tema = [
@@ -24,7 +24,7 @@ const tema = [
     nomor: 2,
     nama: "Kesehatan dan Gizi Masyarakat",
     ringkas:
-      "Teknologi tepat guna dan pengembangan sistem untuk meningkatkan kesehatan dan gizi — kunci kualitas SDM, karena kesehatan masa awal kehidupan menentukan kualitas hidup selanjutnya.",
+      "Teknologi tepat guna dan pengembangan sistem untuk meningkatkan kesehatan dan gizi, kunci kualitas SDM, karena kesehatan masa awal kehidupan menentukan kualitas hidup selanjutnya.",
   },
   {
     nomor: 3,
@@ -36,7 +36,7 @@ const tema = [
     nomor: 4,
     nama: "Pemberantasan Kemiskinan",
     ringkas:
-      "Pemikiran multidimensi untuk menekan angka kemiskinan relatif — target: di bawah 6% pada akhir 2029 — dari berbagai sisi penyebabnya yang kompleks.",
+      "Pemikiran multidimensi untuk menekan angka kemiskinan relatif, target: di bawah 6% pada akhir 2029, dari berbagai sisi penyebabnya yang kompleks.",
   },
   {
     nomor: 5,
@@ -82,7 +82,7 @@ export default function TemaPage() {
       <SectionHeading
         as="h1"
         title="10 Tema PKM Tematik 2026"
-        lead="Sejak 2025, setiap proposal PKM wajib merujuk salah satu tema berikut — dirumuskan dari program prioritas pemerintah dan masalah yang dihadapi masyarakat menuju Indonesia Emas."
+        lead="Sejak 2025, setiap proposal PKM wajib merujuk salah satu tema berikut, dirumuskan dari program prioritas pemerintah dan masalah yang dihadapi masyarakat menuju Indonesia Emas."
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -108,7 +108,7 @@ export default function TemaPage() {
 
       <p className="mt-10 max-w-3xl rounded-xl bg-emas-50 px-5 py-4 text-sm leading-6 text-emas-700">
         Tips: kesesuaian judul dengan tema yang dipilih adalah salah satu aspek
-        seleksi administrasi — pastikan topikmu benar-benar menjawab tema, bukan
+        seleksi administrasi, pastikan topikmu benar-benar menjawab tema, bukan
         sekadar menyentuh permukaannya.
       </p>
     </div>

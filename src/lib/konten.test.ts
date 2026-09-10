@@ -9,7 +9,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 /*
   Test perilaku LUAR modul data (sesuai Testing Decisions di PRD):
   jalur sukses, gagal database → fallback, data kosong → fallback,
-  dan tidak terkonfigurasi → fallback. Menggunakan klien tiruan —
+  dan tidak terkonfigurasi → fallback. Menggunakan klien tiruan , 
   tidak menyentuh Supabase sungguhan.
 */
 

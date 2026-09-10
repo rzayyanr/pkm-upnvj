@@ -19,7 +19,7 @@ export const pkmKc: Bidang = {
     "Karya PKM-KC dapat berwujud sistem, desain, model atau barang, prototipe, produk kesenian kontemporer, aplikasi, produk literasi, atau jasa layanan bagi masyarakat luas, instansi pemerintah, atau dunia usaha, dan dapat menjadi landasan pengusulan PKM-K, PKM-PM, PKM-PI, ataupun PKM-KI pada tahun-tahun berikutnya. Pada penilaian proposal, bobot terbesar diberikan pada kontribusi produk terhadap solusi permasalahan dan perkembangan IPTEK (25), kreativitas gagasan yang orisinal (20), kemutakhiran IPTEK yang diadopsi (20), kesesuaian tahap pelaksanaan (15), potensi publikasi artikel ilmiah atau Kekayaan Intelektual (10), penjadwalan kegiatan dan personalia (5), serta penyusunan anggaran biaya (5).",
   ],
   ketentuanTim: [
-    "Tim pengusul terdiri dari 3–5 mahasiswa aktif D-3/D-4/S-1 dari perguruan tinggi di bawah Kemdiktisaintek yang terdaftar di PDDikti, dengan susunan 1 ketua dan 2–4 anggota; yang sudah menyandang gelar atau sedang mengikuti pendidikan profesi dan koas (farmasi, kedokteran, kedokteran hewan, kedokteran gigi, akuntansi, notariat, dan lainnya) tidak diperbolehkan mengusulkan proposal PKM.",
+    "Tim pengusul terdiri dari 3-5 mahasiswa aktif D-3/D-4/S-1 dari perguruan tinggi di bawah Kemdiktisaintek yang terdaftar di PDDikti, dengan susunan 1 ketua dan 2-4 anggota; yang sudah menyandang gelar atau sedang mengikuti pendidikan profesi dan koas (farmasi, kedokteran, kedokteran hewan, kedokteran gigi, akuntansi, notariat, dan lainnya) tidak diperbolehkan mengusulkan proposal PKM.",
     "Topik PKM yang diangkat harus sesuai atau relevan dengan bidang ilmu ketua dan/atau anggota tim pengusul; kegiatan dan produk PKM-KC meliputi semua bidang keilmuan (mono atau multi disiplin ilmu).",
     "Nama pengusul (ketua dan anggota) harus ditulis lengkap sesuai nama yang terdaftar pada PDDikti; boleh berasal dari prodi yang sama atau berbeda asal masih satu perguruan tinggi.",
     "Keanggotaan tim disarankan berasal dari minimum 2 angkatan berbeda agar terjadi pembinaan dan kesinambungan pengusulan program tahun berikutnya.",
@@ -28,14 +28,14 @@ export const pkmKc: Bidang = {
     "Tidak dapat dikategorikan sebagai PKM-KC: karya yang menghasilkan model/prototipe namun belum siap uji dan belum fungsional, serta solusi kebutuhan dunia usaha yang masih bersifat generik; solusi non-generik (belum ada produk dengan spesifikasi identik di pasar) termasuk PKM-KC.",
   ],
   pendanaan: {
-    utama: "Rp 6–8 juta per judul dari Direktorat Pembelajaran dan Kemahasiswaan (lolos passing grade)",
+    utama: "Rp 6-8 juta per judul dari Direktorat Pembelajaran dan Kemahasiswaan (lolos passing grade)",
     pendampingPt: "Wajib dari PT, maksimum Rp 2 juta (tunai dan/atau barang)",
     institusiLain: "Maksimum Rp 1 juta dari sponsor/mitra (opsional)",
   },
   luaran: [
     "Laporan kemajuan (bagian inti maksimum 10 halaman)",
     "Laporan akhir (bagian inti maksimum 10 halaman)",
-    "Prototipe fisik atau digital sesuai pendanaan yang disetujui — bersifat wajib bagi tim yang mendapatkan pendanaan",
+    "Prototipe fisik atau digital sesuai pendanaan yang disetujui, bersifat wajib bagi tim yang mendapatkan pendanaan",
     "Akun media sosial khusus topik PKM (aktif, publik)",
   ],
   catatanLuaran:
@@ -51,12 +51,12 @@ export const pkmKc: Bidang = {
       "Bagian inti maksimum 10 halaman; tidak ada halaman sampul dan halaman pengesahan pada berkas",
     ],
     struktur: [
-      "BAB 1 Pendahuluan — identifikasi permasalahan yang dicari solusinya beserta sumber inspirasinya; jika berlandaskan riset orang lain sebutkan nama pelaksana, institusi tim riset, dan hasilnya; nyatakan fase final yang akan dicapai; pengembangan produk yang sudah ada harus menyebut nama produsen/pembuat, target, dan aspek penyempurnaan disertai justifikasi ilmiah dan/atau ekonomi; juga uraian modifikasi, keterbaruan, luaran target, dan prediksi manfaat",
-      "BAB 2 Tinjauan Pustaka — gambaran perkembangan mutakhir terkait produk yang akan dihasilkan dari skripsi, tesis, disertasi, buku referensi, artikel jurnal, prosiding, internet, brosur, hingga media cetak; informasi ilmiah yang relevan dengan spesifikasi awal dan/atau akhir produk serta solusi",
-      "BAB 3 Tahap Pelaksanaan — tahapan rinci hingga fase akhir: pengumpulan data sekunder untuk desain awal, penyusunan desain teknis, pembuatan produk/jasa layanan, cara pengujian keandalan karya, evaluasi atau prediksi penerimaan masyarakat; pengujian boleh langsung pada produk fisik atau menggunakan software pendukung untuk memprediksi hasil uji",
-      "BAB 4 Biaya dan Jadwal Kegiatan — RAB (komposisi minimum 80% operasional, maksimum 20% administrasi; wajib memuat alokasi dana publikasi dan/atau promosi kegiatan di media sosial) + jadwal bar chart 3–4 bulan",
-      "Daftar Pustaka — Harvard style, alfabetis, baris kedua dan setelahnya menjorok ke dalam",
-      "Lampiran — biodata ketua, anggota, dan dosen pendamping; justifikasi anggaran; susunan tim pengusul dan pembagian tugas; surat pernyataan ketua; gambaran teknologi yang akan dikembangkan; hasil uji periksa similaritas (Turnitin, iThenticate, atau sejenisnya, indeks maksimum 25%)",
+      "BAB 1 Pendahuluan, identifikasi permasalahan yang dicari solusinya beserta sumber inspirasinya; jika berlandaskan riset orang lain sebutkan nama pelaksana, institusi tim riset, dan hasilnya; nyatakan fase final yang akan dicapai; pengembangan produk yang sudah ada harus menyebut nama produsen/pembuat, target, dan aspek penyempurnaan disertai justifikasi ilmiah dan/atau ekonomi; juga uraian modifikasi, keterbaruan, luaran target, dan prediksi manfaat",
+      "BAB 2 Tinjauan Pustaka, gambaran perkembangan mutakhir terkait produk yang akan dihasilkan dari skripsi, tesis, disertasi, buku referensi, artikel jurnal, prosiding, internet, brosur, hingga media cetak; informasi ilmiah yang relevan dengan spesifikasi awal dan/atau akhir produk serta solusi",
+      "BAB 3 Tahap Pelaksanaan, tahapan rinci hingga fase akhir: pengumpulan data sekunder untuk desain awal, penyusunan desain teknis, pembuatan produk/jasa layanan, cara pengujian keandalan karya, evaluasi atau prediksi penerimaan masyarakat; pengujian boleh langsung pada produk fisik atau menggunakan software pendukung untuk memprediksi hasil uji",
+      "BAB 4 Biaya dan Jadwal Kegiatan, RAB (komposisi minimum 80% operasional, maksimum 20% administrasi; wajib memuat alokasi dana publikasi dan/atau promosi kegiatan di media sosial) + jadwal bar chart 3-4 bulan",
+      "Daftar Pustaka, Harvard style, alfabetis, baris kedua dan setelahnya menjorok ke dalam",
+      "Lampiran, biodata ketua, anggota, dan dosen pendamping; justifikasi anggaran; susunan tim pengusul dan pembagian tugas; surat pernyataan ketua; gambaran teknologi yang akan dikembangkan; hasil uji periksa similaritas (Turnitin, iThenticate, atau sejenisnya, indeks maksimum 25%)",
     ],
     catatanKhas: [
       "RAB per jenis pengeluaran: bahan habis pakai maksimum 60%, sewa dan jasa maksimum 15%, transportasi lokal maksimum 30%, lain-lain maksimum 15% (total keempat jenis pengeluaran tetap senilai 100%); kertas tidak lebih dari 2 rim, sewa laboratorium/peralatan (jika wajib) tidak melebihi Rp1.000.000,00, dan biaya perjalanan PKM-KC diusahakan seefisien dan seminimal mungkin (at cost).",

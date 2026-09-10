@@ -20,7 +20,7 @@ export const pkmPm: Bidang = {
     "Sebelum menyusun proposal, mahasiswa menggali informasi langsung dari masyarakat mitra untuk mendiskusikan kebutuhan atau persoalan prioritas, lalu membantu memetakan masalah, menentukan skala prioritas, dan menyelesaikannya. Seluruh aktivitas tim dan mitra wajib didokumentasikan, dipublikasikan di media sosial, dan diunggah ke Logbook kegiatan pada simbelmawa/pkm; laporan kemajuan dan laporan akhir wajib merujuk pada Logbook tersebut.",
   ],
   ketentuanTim: [
-    "Tim 3–5 mahasiswa aktif D-3/D-4/S-1 di Perguruan Tinggi di bawah Kemendiktisaintek yang terdaftar di PDDikti: 1 ketua + 2–4 anggota; yang sudah menyandang gelar atau sedang mengikuti pendidikan profesi/koas tidak diperbolehkan.",
+    "Tim 3-5 mahasiswa aktif D-3/D-4/S-1 di Perguruan Tinggi di bawah Kemendiktisaintek yang terdaftar di PDDikti: 1 ketua + 2-4 anggota; yang sudah menyandang gelar atau sedang mengikuti pendidikan profesi/koas tidak diperbolehkan.",
     "Bidang kajian tidak harus sesuai atau relevan dengan bidang ilmu ketua dan/atau anggota tim pengusul.",
     "Nama pengusul ditulis lengkap sesuai terdaftar di PDDikti; boleh berasal dari prodi yang sama atau berbeda asal masih satu Perguruan Tinggi.",
     "Anggota disarankan berasal dari minimum 2 angkatan berbeda agar ada pembinaan dan kesinambungan pengusulan program tahun berikutnya.",
@@ -29,7 +29,7 @@ export const pkmPm: Bidang = {
     "Proposal melampirkan surat pernyataan kesediaan bekerja sama yang cukup ditandatangani ketua/koordinator kelompok mitra atau komunitas (tidak harus ada stempel/cap), bukan oleh Kepala Desa, Ketua RW, Ketua RT, atau pejabat struktural pemerintah daerah.",
   ],
   pendanaan: {
-    utama: "Rp 6–8 juta per judul dari Direktorat Pembelajaran dan Kemahasiswaan (lolos passing grade)",
+    utama: "Rp 6-8 juta per judul dari Direktorat Pembelajaran dan Kemahasiswaan (lolos passing grade)",
     pendampingPt:
       "Wajib dari PT, maksimum Rp 2 juta (tunai dan/atau barang), ditunjukkan dalam surat komitmen dukungan pendanaan",
     institusiLain: "Maksimum Rp 1 juta dari sponsor/mitra lain (opsional)",
@@ -37,7 +37,7 @@ export const pkmPm: Bidang = {
   luaran: [
     "Laporan kemajuan (bagian inti maksimum 10 halaman)",
     "Laporan akhir (bagian inti maksimum 10 halaman)",
-    "Buku Pedoman Mitra — buku manual petunjuk operasional agar mitra dapat melanjutkan kegiatan setelah PKM-PM selesai",
+    "Buku Pedoman Mitra, buku manual petunjuk operasional agar mitra dapat melanjutkan kegiatan setelah PKM-PM selesai",
     "Akun media sosial khusus topik PKM (aktif, publik)",
   ],
   catatanLuaran:
@@ -52,12 +52,12 @@ export const pkmPm: Bidang = {
       "Daftar isi pakai angka romawi (kanan bawah); bagian inti & lampiran angka arab mulai 1 (kanan atas)",
     ],
     struktur: [
-      "BAB 1 Pendahuluan — latar belakang permasalahan/kebutuhan mitra dan prioritas penyelesaiannya, aspek yang mendasari pengabdian, rumusan masalah, tujuan, manfaat, target luaran",
-      "BAB 2 Gambaran Umum Masyarakat Mitra — profil mitra (nama, alamat, lokasi, jumlah), kondisi riil dan potensi wilayah aspek fisik-sosial-ekonomi-lingkungan, hubungan masalah mitra dengan solusi yang diusulkan",
-      "BAB 3 Metode Pelaksanaan — tahapan terprogram dan terukur: persiapan (koordinasi, perizinan), implementasi (sosialisasi, pelatihan, praktik mandiri mitra), diseminasi-monitoring-evaluasi, desain keberlanjutan; memuat baseline kondisi riil mitra, justifikasi tiap tahapan, rancangan evaluasi, dan peran pihak pendukung",
-      "BAB 4 Biaya dan Jadwal — RAB komposisi minimum 80% operasional, maksimum 20% administrasi (bahan habis maks 60%, sewa/jasa maks 15%, transport lokal maks 30%, lain-lain maks 15%; wajib memuat alokasi publikasi/promosi di media sosial maks Rp 500 ribu) + jadwal bar chart 3–4 bulan",
-      "Daftar Pustaka — Harvard style, alfabetis",
-      "Lampiran — biodata, justifikasi anggaran, susunan tim & pembagian tugas, surat pernyataan ketua, surat pernyataan kesediaan bekerja sama dari mitra, denah lokasi mitra (maksimum 200 km via Google Maps), hasil uji similaritas",
+      "BAB 1 Pendahuluan, latar belakang permasalahan/kebutuhan mitra dan prioritas penyelesaiannya, aspek yang mendasari pengabdian, rumusan masalah, tujuan, manfaat, target luaran",
+      "BAB 2 Gambaran Umum Masyarakat Mitra, profil mitra (nama, alamat, lokasi, jumlah), kondisi riil dan potensi wilayah aspek fisik-sosial-ekonomi-lingkungan, hubungan masalah mitra dengan solusi yang diusulkan",
+      "BAB 3 Metode Pelaksanaan, tahapan terprogram dan terukur: persiapan (koordinasi, perizinan), implementasi (sosialisasi, pelatihan, praktik mandiri mitra), diseminasi-monitoring-evaluasi, desain keberlanjutan; memuat baseline kondisi riil mitra, justifikasi tiap tahapan, rancangan evaluasi, dan peran pihak pendukung",
+      "BAB 4 Biaya dan Jadwal, RAB komposisi minimum 80% operasional, maksimum 20% administrasi (bahan habis maks 60%, sewa/jasa maks 15%, transport lokal maks 30%, lain-lain maks 15%; wajib memuat alokasi publikasi/promosi di media sosial maks Rp 500 ribu) + jadwal bar chart 3-4 bulan",
+      "Daftar Pustaka, Harvard style, alfabetis",
+      "Lampiran, biodata, justifikasi anggaran, susunan tim & pembagian tugas, surat pernyataan ketua, surat pernyataan kesediaan bekerja sama dari mitra, denah lokasi mitra (maksimum 200 km via Google Maps), hasil uji similaritas",
     ],
     catatanKhas: [
       "Item RAB yang dilarang: honorarium/konsumsi/hadiah, sewa komputer-laptop-printer-ponsel-kamera-ruangan/aula, pembelian alat/bahan > Rp 1 juta per item, flashdisk/penyimpanan data, kuota internet > Rp 100 ribu/bulan per tim, sewa lisensi > 6 bulan, penjilidan laporan (kecuali PTS/PTN yang mewajibkan hardcopy), biaya seminar/publikasi jurnal.",

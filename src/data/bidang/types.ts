@@ -37,6 +37,6 @@ export type Bidang = {
 };
 
 export const labelSkema: Record<SkemaBidang, string> = {
-  pendanaan: "Skema Pendanaan · berujung PIMNAS",
+  pendanaan: "Skema Pendanaan, berujung PIMNAS",
   insentif: "Skema Insentif",
 };

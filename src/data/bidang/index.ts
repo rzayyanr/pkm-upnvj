@@ -10,7 +10,7 @@ import { pkmVgk } from "./pkm-vgk";
 import { pkmGft } from "./pkm-gft";
 import { pkmAi } from "./pkm-ai";
 
-/** Semua 10 bidang PKM — urutan mengikuti Panduan Umum (Tabel Kriteria). */
+/** Semua 10 bidang PKM, urutan mengikuti Panduan Umum (Tabel Kriteria). */
 export const daftarBidang: Bidang[] = [
   pkmRe,
   pkmRsh,

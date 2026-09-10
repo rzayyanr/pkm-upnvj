@@ -14,7 +14,7 @@ export default function TipsPage() {
       <SectionHeading
         as="h1"
         title="Agar proposalmu tidak gugur di administrasi"
-        lead="Penilaian proposal dilakukan daring dalam 2 tahap. Tahap 1 = seleksi administrasi — satu saja aspek yang tidak sesuai bisa menggugurkan. Tahap 2 = seleksi substansi oleh 2 penilai, menilai kreativitas, kekinian topik, dan tantangan intelektual."
+        lead="Penilaian proposal dilakukan daring dalam 2 tahap. Tahap 1 = seleksi administrasi, satu saja aspek yang tidak sesuai bisa menggugurkan. Tahap 2 = seleksi substansi oleh 2 penilai, menilai kreativitas, kekinian topik, dan tantangan intelektual."
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -24,7 +24,7 @@ export default function TipsPage() {
           </h2>
           <p className="mt-2 text-sm leading-6 text-zinc-700">
             Lampirkan hasil uji periksa similaritas (Turnitin, iThenticate, atau
-            sejenisnya) untuk <strong>bagian inti proposal</strong> — pendahuluan
+            sejenisnya) untuk <strong>bagian inti proposal</strong>, pendahuluan
             sampai daftar pustaka. Indeks di atas 25% = gugur.
           </p>
         </Card>
@@ -51,7 +51,7 @@ export default function TipsPage() {
           </h2>
           <p className="mt-2 text-sm leading-6 text-zinc-700">
             Format perujukan: nama belakang, tahun, diurutkan alfabetis. Setiap
-            pustaka yang dirujuk harus muncul di daftar pustaka — dan
+            pustaka yang dirujuk harus muncul di daftar pustaka, dan
             sebaliknya. Bukan Harvard = <strong>gugur di Tahap 1</strong>.
           </p>
         </Card>
@@ -85,7 +85,7 @@ export default function TipsPage() {
           <p className="mt-2 text-sm leading-6 text-zinc-700">
             Tim didanai wajib membuat akun medsos khusus topik PKM (Instagram,
             TikTok, X, Facebook, atau YouTube). Ada 3 unggahan wajib ber-iklan
-            serentak — 23 Mei, 20 Juni, 8 Agustus 2026 — total anggaran Ads
+            serentak, 23 Mei, 20 Juni, 8 Agustus 2026, total anggaran Ads
             maksimum Rp 500 ribu. Aktivitas medsos masuk penilaian PKP2.
           </p>
         </Card>
@@ -98,18 +98,18 @@ export default function TipsPage() {
         />
         <div className="mt-4 rounded-2xl bg-veteran-800 px-6 py-6 text-white">
           <p className="font-heading text-xl font-bold">
-            NA = 0,3·NP + 0,2·NLK + 0,5·NM
+            NA = 0,3, NP + 0,2, NLK + 0,5, NM
           </p>
           <ul className="mt-3 space-y-1 text-sm leading-6 text-veteran-100">
-            <li>NP = nilai proposal · NLK = nilai laporan kemajuan</li>
+            <li>NP = nilai proposal, NLK = nilai laporan kemajuan</li>
             <li>
-              NM = nilai PKP2 (presentasi) — untuk KI: 10% dokumen teknis + 40%
+              NM = nilai PKP2 (presentasi), untuk KI: 10% dokumen teknis + 40%
               presentasi; untuk VGK: 25% video + 25% presentasi
             </li>
           </ul>
         </div>
         <p className="mt-4 text-sm leading-6 text-zinc-600">
-          Artinya presentasi saat PKP2 punya bobot terbesar (50%) — jangan hanya
+          Artinya presentasi saat PKP2 punya bobot terbesar (50%), jangan hanya
           fokus ke proposal, siapkan juga pelaksanaan dan catatannya (Logbook
           kegiatan & keuangan di simbelmawa).
         </p>

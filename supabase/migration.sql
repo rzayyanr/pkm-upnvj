@@ -1,6 +1,6 @@
 -- ============================================================
--- Migrasi Tiket 07 — Skema Website PKM UPNVJ
--- Sumber: docs/ERD.md (kanaon) — jalankan di SQL Editor Supabase
+-- Migrasi Tiket 07, Skema Website PKM UPNVJ
+-- Sumber: docs/ERD.md (kanaon), jalankan di SQL Editor Supabase
 -- Tabel konten dinamis saja; panduan statis tetap di kode.
 -- ============================================================
 
@@ -16,7 +16,7 @@ end;
 $$;
 
 -- ------------------------------------------------------------
--- 1. PROFIL_ADMIN — daftar putih email yang boleh memakai panel admin
+-- 1. PROFIL_ADMIN, daftar putih email yang boleh memakai panel admin
 -- ------------------------------------------------------------
 create table public.profil_admin (
   id uuid primary key references auth.users(id) on delete cascade,
@@ -185,12 +185,12 @@ create policy "admin kelola tautan" on public.tautan_cepat
   ));
 
 -- ------------------------------------------------------------
--- DATA AWAL (seed) — jadwal resmi siklus PKM 2026 (riset
+-- DATA AWAL (seed), jadwal resmi siklus PKM 2026 (riset
 -- research/jadwal-pkm-2026.md) + kontak CDE + tautan resmi
 -- ------------------------------------------------------------
 insert into public.agenda_deadline (judul, deskripsi, cakupan, tanggal_mulai, tanggal_selesai, lokasi, tautan)
 values
-  ('PKP2 — Penilaian Kemajuan Pelaksanaan PKM (daring)',
+  ('PKP2, Penilaian Kemajuan Pelaksanaan PKM (daring)',
    'Presentasi kemajuan kegiatan ke 2 penilai Direktorat Pembelajaran dan Kemahasiswaan. Pengumuman judul yang dinilai terbit 28 Agustus 2026.',
    'nasional', '2026-09-14', '2026-09-19', 'Daring', null),
   ('PKM Award 2026',
@@ -203,13 +203,13 @@ values
    'Penetapan judul PKM yang berhak mengikuti PIMNAS berdasarkan nilai akhir.',
    'nasional', '2026-10-12', '2026-10-13', null, null),
   ('PIMNAS 39 tahun 2026',
-   'Pekan Ilmiah Mahasiswa Nasional ke-39 — panggung final pelaksanaan PKM: presentasi, poster, dan gelar produk.',
+   'Pekan Ilmiah Mahasiswa Nasional ke-39, panggung final pelaksanaan PKM: presentasi, poster, dan gelar produk.',
    'nasional', '2026-11-02', '2026-11-07', 'Universitas Diponegoro, Semarang', null);
 
 insert into public.pengumuman (judul, isi, kategori, penting, tanggal_terbit)
 values
   ('Siklus PKM 2026 memasuki tahap PKP2',
-   'Penilaian Kemajuan Pelaksanaan PKM (PKP2) dilaksanakan secara daring 14–19 September 2026. Tim yang didanai wajib memastikan laporan kemajuan, Logbook, dan tautan media sosial telah lengkap di simbelmawa sebelum jadwal penilaian.',
+   'Penilaian Kemajuan Pelaksanaan PKM (PKP2) dilaksanakan secara daring 14-19 September 2026. Tim yang didanai wajib memastikan laporan kemajuan, Logbook, dan tautan media sosial telah lengkap di simbelmawa sebelum jadwal penilaian.',
    'jadwal', true, now());
 
 insert into public.kontak (nama_unit, email, telepon, instagram, alamat, jam_layanan, urutan)

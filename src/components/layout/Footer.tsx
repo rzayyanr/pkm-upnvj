@@ -50,7 +50,7 @@ export async function Footer() {
             Veteran Jakarta.
           </p>
           <p className="mt-4 text-xs leading-5 text-zinc-500">
-            Website independen proyek portofolio mahasiswa — bukan situs resmi
+            Website independen proyek portofolio mahasiswa, bukan situs resmi
             UPNVJ. Rujukan resmi: Simbelmawa dan UPT PKK/CDE UPNVJ.
           </p>
         </div>
@@ -110,7 +110,7 @@ export async function Footer() {
 
       <div className="border-t border-zinc-200">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-4 text-xs text-zinc-500 sm:px-6">
-          <p>© {new Date().getFullYear()} PKM UPNVJ — proyek portofolio.</p>
+          <p>© {new Date().getFullYear()} PKM UPNVJ, proyek portofolio.</p>
           <p>
             Konten panduan mengacu{" "}
             <Link href="/unduhan" className="underline-offset-2 hover:underline">

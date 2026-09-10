@@ -37,16 +37,16 @@ export default function KomponenPage() {
 
       <section className="mt-12 space-y-4">
         <h2 className="font-heading text-xl font-semibold text-zinc-900">
-          Badge — dua skema PKM
+          Badge, dua skema PKM
         </h2>
         <div className="flex flex-wrap items-center gap-3">
-          <Badge variant="pendanaan">Skema Pendanaan · Rp 6–8 juta</Badge>
-          <Badge variant="insentif">Skema Insentif · Rp 1,5 juta</Badge>
+          <Badge variant="pendanaan">Skema Pendanaan, Rp 6-8 juta</Badge>
+          <Badge variant="insentif">Skema Insentif, Rp 1,5 juta</Badge>
           <Badge variant="mendesak">Deadline 19 September</Badge>
           <Badge variant="netral">Berujung PIMNAS</Badge>
         </div>
         <p className="text-sm text-zinc-500">
-          Hijau = pendanaan, kuning = insentif, merah = mendesak — konsisten di
+          Hijau = pendanaan, kuning = insentif, merah = mendesak, konsisten di
           seluruh situs.
         </p>
       </section>
@@ -70,7 +70,7 @@ export default function KomponenPage() {
             <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
               <div>
                 <dt className="text-zinc-500">Tim</dt>
-                <dd className="font-medium text-zinc-900">3–5 mahasiswa</dd>
+                <dd className="font-medium text-zinc-900">3-5 mahasiswa</dd>
               </div>
               <div>
                 <dt className="text-zinc-500">Luaran khas</dt>
@@ -87,13 +87,13 @@ export default function KomponenPage() {
         </h2>
         <div className="max-w-xl">
           <ol className="list-none">
-            <TimelineItem nomor={1} title="Penyusunan proposal" status="selesai" period="9 Mar – 9 Apr 2026">
+            <TimelineItem nomor={1} title="Penyusunan proposal" status="selesai" period="9 Mar sampai 9 Apr 2026">
               Pilih tema, susun proposal sesuai sistematika bidang.
             </TimelineItem>
-            <TimelineItem nomor={2} title="PKP2 — penilaian kemajuan" status="berjalan" period="14 – 19 September 2026">
+            <TimelineItem nomor={2} title="PKP2, penilaian kemajuan" status="berjalan" period="14-19 September 2026">
               Presentasi kemajuan kegiatan secara daring.
             </TimelineItem>
-            <TimelineItem nomor={3} title="PIMNAS 39" status="akan-datang" period="2 – 7 November 2026 · Universitas Diponegoro">
+            <TimelineItem nomor={3} title="PIMNAS 39" status="akan-datang" period="2-7 November 2026, Universitas Diponegoro">
               Panggung final pelaksanaan PKM.
             </TimelineItem>
           </ol>
@@ -127,7 +127,7 @@ export default function KomponenPage() {
           Placeholder info kampus
         </h2>
         <PlaceholderBanner>
-          jadwal seleksi internal UPNVJ tahun 2027 belum diumumkan — halaman ini
+          jadwal seleksi internal UPNVJ tahun 2027 belum diumumkan, halaman ini
           akan diperbarui begitu info resmi dari UPT PKK/CDE terbit.
         </PlaceholderBanner>
       </section>

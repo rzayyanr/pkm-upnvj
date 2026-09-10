@@ -16,7 +16,7 @@ export default function BidangPage() {
       <SectionHeading
         as="h1"
         title="Pilih bidang PKM-mu"
-        lead="Sepuluh bidang PKM terbagi dua skema: 8 bidang skema pendanaan (Rp 6–8 juta per tim, berujung PIMNAS) dan 2 bidang skema insentif (Rp 1,5 juta). Kenali karakternya, lalu buka detail untuk sistematika proposalnya."
+        lead="Sepuluh bidang PKM terbagi dua skema: 8 bidang skema pendanaan (Rp 6-8 juta per tim, berujung PIMNAS) dan 2 bidang skema insentif (Rp 1,5 juta). Kenali karakternya, lalu buka detail untuk sistematika proposalnya."
       />
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -43,8 +43,8 @@ export default function BidangPage() {
               </p>
               <p className="mt-4 text-sm font-medium text-veteran-700">
                 {b.skema === "pendanaan"
-                  ? "Tim 3–5 · Rp 6–8 juta · PIMNAS"
-                  : "Tim 3–5 · Insentif Rp 1,5 juta"}
+                  ? "Tim 3-5, Rp 6-8 juta, PIMNAS"
+                  : "Tim 3-5, Insentif Rp 1,5 juta"}
               </p>
             </Card>
           </Link>

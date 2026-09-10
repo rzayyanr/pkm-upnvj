@@ -23,7 +23,7 @@ export default async function Home() {
             Semua yang perlu kamu tahu tentang PKM di UPNVJ
           </h1>
           <p className="max-w-xl text-lg leading-8 text-veteran-100">
-            Dari memilih bidang sampai melangkah ke PIMNAS — panduan resmi,
+            Dari memilih bidang sampai melangkah ke PIMNAS, panduan resmi,
             jadwal terkini, dan tips proposal dalam satu tempat.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -79,9 +79,9 @@ export default async function Home() {
                     <p className="text-zinc-500">
                       {formatTanggal.format(new Date(a.tanggal_mulai))}
                       {a.tanggal_selesai
-                        ? ` – ${formatTanggal.format(new Date(a.tanggal_selesai))}`
+                        ? ` sampai ${formatTanggal.format(new Date(a.tanggal_selesai))}`
                         : ""}
-                      {a.lokasi ? ` · ${a.lokasi}` : ""}
+                      {a.lokasi ? `, ${a.lokasi}` : ""}
                     </p>
                   </li>
                 ))}
@@ -96,7 +96,7 @@ export default async function Home() {
         {!hasilPengumuman.ok || !hasilAgenda.ok ? (
           <div className="mt-4">
             <PlaceholderBanner>
-              jadwal seleksi internal UPNVJ tahun 2027 belum diumumkan — bagian
+              jadwal seleksi internal UPNVJ tahun 2027 belum diumumkan, bagian
               pengumuman dan agenda di atas akan diisi langsung oleh pengelola
               PKM UPNVJ (UPT PKK/CDE) tanpa perlu deploy ulang, begitu panel
               admin aktif.
@@ -109,7 +109,7 @@ export default async function Home() {
         <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
           <SectionHeading
             title="Apa itu PKM?"
-            lead="Program Kreativitas Mahasiswa (PKM) adalah program Kemdiktisaintek untuk mengasah kreativitas mahasiswa lewat karya nyata — riset, produk iptek, usaha, pengabdian, hingga tulisan dan video — yang puncaknya adalah Pekan Ilmiah Mahasiswa Nasional (PIMNAS)."
+            lead="Program Kreativitas Mahasiswa (PKM) adalah program Kemdiktisaintek untuk mengasah kreativitas mahasiswa lewat karya nyata, riset, produk iptek, usaha, pengabdian, hingga tulisan dan video, yang puncaknya adalah Pekan Ilmiah Mahasiswa Nasional (PIMNAS)."
           />
           <div className="mt-5">
             <Link
@@ -125,7 +125,7 @@ export default async function Home() {
       <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
         <SectionHeading
           title="Pilih bidangmu"
-          lead="10 bidang, dua skema: 8 bidang pendanaan (Rp 6–8 juta per tim, berujung PIMNAS) dan 2 bidang insentif (Rp 1,5 juta)."
+          lead="10 bidang, dua skema: 8 bidang pendanaan (Rp 6-8 juta per tim, berujung PIMNAS) dan 2 bidang insentif (Rp 1,5 juta)."
         />
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {daftarBidang.map((b) => (

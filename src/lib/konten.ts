@@ -1,7 +1,7 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 /*
-  MODUL DATA SATU PINTU (seam dari PRD — Keputusan Implementasi #11).
+  MODUL DATA SATU PINTU (seam dari PRD, Keputusan Implementasi #11).
   Satu-satunya jalur halaman membaca konten dinamis dari Supabase.
   Aturan: halaman TIDAK PERNAH memanggil Supabase langsung.
 

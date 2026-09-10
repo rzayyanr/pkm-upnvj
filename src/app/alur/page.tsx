@@ -48,11 +48,11 @@ export default async function AlurPage() {
                   <span className="font-semibold">{a.judul}</span>
                   <span className="text-veteran-700">
                     {" "}
-                    — {formatTanggal.format(new Date(a.tanggal_mulai))}
+                   , {formatTanggal.format(new Date(a.tanggal_mulai))}
                     {a.tanggal_selesai
-                      ? ` – ${formatTanggal.format(new Date(a.tanggal_selesai))}`
+                      ? ` sampai ${formatTanggal.format(new Date(a.tanggal_selesai))}`
                       : ""}
-                    {a.lokasi ? ` · ${a.lokasi}` : ""}
+                    {a.lokasi ? `, ${a.lokasi}` : ""}
                   </span>
                 </li>
               ))}
@@ -66,7 +66,7 @@ export default async function AlurPage() {
           nomor={1}
           title="Penyusunan proposal"
           status="selesai"
-          period="9 Maret – 9 April 2026"
+          period="9 Maret sampai 9 April 2026"
         >
           Pilih bidang dan tema, susun proposal sesuai sistematika, lakukan
           evaluasi internal kampus, lalu operator PT mendaftarkan usulan di
@@ -79,7 +79,7 @@ export default async function AlurPage() {
           period="satu jendela dengan poin 1"
         >
           Unggah isi utama (daftar isi, bagian inti, lampiran) ke
-          simbelmawa/pkm — divalidasi dosen pendamping, disahkan pimpinan PT
+          simbelmawa/pkm, divalidasi dosen pendamping, disahkan pimpinan PT
           bidang kemahasiswaan.
         </TimelineItem>
         <TimelineItem
@@ -104,7 +104,7 @@ export default async function AlurPage() {
           nomor={5}
           title="Pelaksanaan kegiatan"
           status="selesai"
-          period="3–4 bulan"
+          period="3-4 bulan"
         >
           Kegiatan luring sesuai jadwal proposal; Logbook kegiatan & keuangan
           diunggah berkala; akun media sosial aktif dengan 3 unggahan
@@ -114,26 +114,26 @@ export default async function AlurPage() {
           nomor={6}
           title="Laporan kemajuan"
           status="selesai"
-          period="1–12 September 2026"
+          period="1-12 September 2026"
         >
           Unggah laporan kemajuan (bagian inti maks 10 halaman) + tautan medsos
           + draft artikel ilmiah.
         </TimelineItem>
         <TimelineItem
           nomor={7}
-          title="PKP2 — penilaian kemajuan (daring)"
+          title="PKP2, penilaian kemajuan (daring)"
           status="berjalan"
-          period="14 – 19 September 2026"
+          period="14-19 September 2026"
         >
           Presentasi kemajuan kegiatan ke 2 penilai; pengumuman judul yang
-          dinilai terbit 28 Agustus 2026. Nilai akhir: NA = 0,3·NP + 0,2·NLK +
-          0,5·NM.
+          dinilai terbit 28 Agustus 2026. Nilai akhir: NA = 0,3, NP + 0,2, NLK +
+          0,5, NM.
         </TimelineItem>
         <TimelineItem
           nomor={8}
           title="PKM Award & Laporan akhir"
           status="akan-datang"
-          period="Award 19–20 Sep · Laporan akhir 21 Sep – 3 Okt 2026"
+          period="Award 19-20 Sep, laporan akhir 21 Sep sampai 3 Okt 2026"
         >
           Laporan akhir = syarat pencairan dana tahap akhir; telat = wajib
           mengembalikan dana ke kas negara.
@@ -142,7 +142,7 @@ export default async function AlurPage() {
           nomor={9}
           title="Pengumuman peserta PIMNAS"
           status="akan-datang"
-          period="12 – 13 Oktober 2026"
+          period="12-13 Oktober 2026"
         >
           Judul terbaik dari nilai akhir ditetapkan mengikuti kuota PIMNAS.
         </TimelineItem>
@@ -150,16 +150,16 @@ export default async function AlurPage() {
           nomor={10}
           title="PIMNAS 39"
           status="akan-datang"
-          period="2 – 7 November 2026 · Universitas Diponegoro, Semarang"
+          period="2-7 November 2026, Universitas Diponegoro, Semarang"
         >
-          Panggung final: presentasi, poster, gelar produk — medali emas,
+          Panggung final: presentasi, poster, gelar produk, medali emas,
           perak, perunggu, dan Piala Adhikarta Kertawidya bagi juara umum.
         </TimelineItem>
       </ol>
 
       <p className="mt-10 max-w-2xl rounded-xl bg-emas-50 px-5 py-4 text-sm leading-6 text-emas-700">
         Tanggal di atas adalah jadwal resmi siklus PKM 2026 (siklusnya sedang
-        berjalan). Untuk persiapan PKM 2027, pola tahapannya sama — panduan dan
+        berjalan). Untuk persiapan PKM 2027, pola tahapannya sama, panduan dan
         jadwal baru biasanya terbit sekitar Maret. Status jadwal akan
         dimutakhirkan dari halaman admin kampus.
       </p>

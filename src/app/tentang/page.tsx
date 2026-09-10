@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 const skema = [
   {
     nama: "Skema Pendanaan",
-    isi: "8 bidang: RE, RSH, K, PM, PI, KC, KI, VGK. Proposal lolos seleksi mendapat dana kegiatan Rp 6–8 juta per tim (plus dana pendamping PT maks Rp 2 juta dan institusi lain maks Rp 1 juta). Kegiatan dilaksanakan 3–4 bulan, dievaluasi lewat PKP2, dan tim terbaik berlanjut ke PIMNAS.",
+    isi: "8 bidang: RE, RSH, K, PM, PI, KC, KI, VGK. Proposal lolos seleksi mendapat dana kegiatan Rp 6-8 juta per tim (plus dana pendamping PT maks Rp 2 juta dan institusi lain maks Rp 1 juta). Kegiatan dilaksanakan 3-4 bulan, dievaluasi lewat PKP2, dan tim terbaik berlanjut ke PIMNAS.",
     variant: "pendanaan" as const,
   },
   {
     nama: "Skema Insentif",
-    isi: "2 bidang: GFT (Gagasan Futuristik Tertulis) dan AI (Artikel Ilmiah). Tidak ada dana kegiatan — tim yang lolos seleksi menerima insentif Rp 1,5 juta. Tidak dipresentasikan di PIMNAS.",
+    isi: "2 bidang: GFT (Gagasan Futuristik Tertulis) dan AI (Artikel Ilmiah). Tidak ada dana kegiatan, tim yang lolos seleksi menerima insentif Rp 1,5 juta. Tidak dipresentasikan di PIMNAS.",
     variant: "insentif" as const,
   },
 ];
@@ -28,7 +28,7 @@ export default function TentangPage() {
       <SectionHeading
         as="h1"
         title="Apa itu Program Kreativitas Mahasiswa?"
-        lead="PKM adalah program bidang kemahasiswaan Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemdiktisaintek) yang mengasah kreativitas, kepekaan, dan daya inovasi mahasiswa — dimulai sejak tahun 2001 dan berujung pada Pekan Ilmiah Mahasiswa Nasional (PIMNAS)."
+        lead="PKM adalah program bidang kemahasiswaan Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemdiktisaintek) yang mengasah kreativitas, kepekaan, dan daya inovasi mahasiswa, dimulai sejak tahun 2001 dan berujung pada Pekan Ilmiah Mahasiswa Nasional (PIMNAS)."
       />
 
       <section className="mt-12 max-w-3xl space-y-4 leading-7 text-zinc-700">
@@ -36,7 +36,7 @@ export default function TentangPage() {
           Lewat PKM, mahasiswa belajar memecahkan masalah nyata di masyarakat,
           dunia usaha, atau pemerintah dengan karya aplikatif: riset, produk
           iptek, kewirausahaan, pengabdian, hingga karya tulis dan video.
-          Selain menghasilkan karya, PKM melatih kerja sama tim — salah satu
+          Selain menghasilkan karya, PKM melatih kerja sama tim, salah satu
           soft skills utama yang diharapkan tumbuh lewat program ini.
         </p>
         <p>
@@ -49,9 +49,9 @@ export default function TentangPage() {
           ).
         </p>
         <p>
-          Perguruan tinggi juga dianjurkan mengakui partisipasi PKM — antara
+          Perguruan tinggi juga dianjurkan mengakui partisipasi PKM, antara
           lain lewat konversi SKS atau penerbitan Surat Keterangan Pendamping
-          Ijazah (SKPI) — sesuai kebijakan masing-masing kampus. Untuk
+          Ijazah (SKPI), sesuai kebijakan masing-masing kampus. Untuk
           kebijakan spesifik UPNVJ, konfirmasikan ke UPT PKK/CDE.
         </p>
       </section>
@@ -100,7 +100,7 @@ export default function TentangPage() {
               ).map(([kode, nama, inti, sk, luaran]) => (
                 <tr key={kode} className="border-b border-zinc-200">
                   <td className="py-3 pr-4 font-medium text-zinc-900">
-                    {kode} — {nama}
+                    {kode}, {nama}
                   </td>
                   <td className="py-3 pr-4">{inti}</td>
                   <td className="py-3 pr-4">
@@ -128,7 +128,7 @@ export default function TentangPage() {
           <p>
             Bagi dosen, pendampingan PKM diakui sebagai pembinaan kegiatan
             mahasiswa dalam kinerja BKD (Keputusan Dirjen Dikti No.
-            12/E/KPT/2021) — sekaligus peluang berinteraksi dengan masyarakat
+            12/E/KPT/2021), sekaligus peluang berinteraksi dengan masyarakat
             dan industri.
           </p>
         </div>

@@ -52,7 +52,7 @@ export default async function DetailBidangPage({
         </span>
         <Badge variant={bidang.skema === "pendanaan" ? "pendanaan" : "insentif"}>
           {bidang.skema === "pendanaan"
-            ? "Skema Pendanaan · berujung PIMNAS"
+            ? "Skema Pendanaan, berujung PIMNAS"
             : "Skema Insentif"}
         </Badge>
       </div>
@@ -63,14 +63,14 @@ export default async function DetailBidangPage({
         <Card>
           <h2 className="text-sm font-medium text-zinc-500">Komposisi tim</h2>
           <p className="mt-1 font-heading text-lg font-semibold text-zinc-900">
-            3–5 mahasiswa
+            3-5 mahasiswa
           </p>
-          <p className="text-sm text-zinc-600">1 ketua + 2–4 anggota</p>
+          <p className="text-sm text-zinc-600">1 ketua + 2-4 anggota</p>
         </Card>
         <Card>
           <h2 className="text-sm font-medium text-zinc-500">Dana utama</h2>
           <p className="mt-1 font-heading text-lg font-semibold text-zinc-900">
-            {bidang.skema === "pendanaan" ? "Rp 6–8 juta" : "Insentif Rp 1,5 juta"}
+            {bidang.skema === "pendanaan" ? "Rp 6-8 juta" : "Insentif Rp 1,5 juta"}
           </p>
           <p className="text-sm text-zinc-600">
             {bidang.skema === "pendanaan"
@@ -85,7 +85,7 @@ export default async function DetailBidangPage({
           </p>
           <p className="text-sm text-zinc-600">
             {bidang.skema === "pendanaan"
-              ? "PIMNAS 39 · 2–7 Nov 2026 · Undip"
+              ? "PIMNAS 39, 2-7 Nov 2026, Undip"
               : "tidak dipresentasikan di PIMNAS"}
           </p>
         </Card>
@@ -233,7 +233,7 @@ export default async function DetailBidangPage({
               Baca langsung panduan resmi {bidang.kode}
             </h2>
             <p className="mt-2 text-veteran-100">
-              Website ini ringkasan — untuk menyusun proposal, panduan resmi
+              Website ini ringkasan, untuk menyusun proposal, panduan resmi
               tetap sumber utamamu.
             </p>
           </div>

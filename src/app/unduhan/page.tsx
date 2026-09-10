@@ -14,7 +14,7 @@ const panduan = [
     nama: "Panduan Umum PKM 2026 (versi lengkap)",
     isi: "Sejarah, kriteria, tahapan, klasterisasi, ketentuan AI, penilaian, PIMNAS, lampiran format",
   },
-  { file: "PKM-RE-2026_fix.pdf", kode: "RE", nama: "PKM Riset Eksakta", isi: "Riset fenomena alamiah — fisika, kimia, biologi, matematika" },
+  { file: "PKM-RE-2026_fix.pdf", kode: "RE", nama: "PKM Riset Eksakta", isi: "Riset fenomena alamiah, fisika, kimia, biologi, matematika" },
   { file: "PKM-RSH-2026_fix.pdf", kode: "RSH", nama: "PKM Riset Sosial Humaniora", isi: "Riset fenomena sosial & perilaku manusia" },
   { file: "PKM-K-2026_fix.pdf", kode: "K", nama: "PKM Kewirausahaan", isi: "Produk iptek sebagai komoditas usaha mahasiswa" },
   { file: "PKM-PM-2026_fix.pdf", kode: "PM", nama: "PKM Pengabdian kepada Masyarakat", isi: "Solusi iptek bagi mitra non-komersial" },
@@ -32,7 +32,7 @@ export default function UnduhanPage() {
       <SectionHeading
         as="h1"
         title="Unduh Panduan PKM 2026"
-        lead="Seluruh isi website ini dirangkum dari 11 buku panduan resmi berikut. Untuk menyusun proposal, unduh panduan bidang yang kamu tuju — website hanya ringkasannya."
+        lead="Seluruh isi website ini dirangkum dari 11 buku panduan resmi berikut. Untuk menyusun proposal, unduh panduan bidang yang kamu tuju, website hanya ringkasannya."
       />
 
       <div className="mt-10 overflow-x-auto">
@@ -79,7 +79,7 @@ export default function UnduhanPage() {
           >
             simbelmawa.kemdiktisaintek.go.id/pkm
           </a>{" "}
-          — berhati-hatilah terhadap situs tiruan.
+         , berhati-hatilah terhadap situs tiruan.
         </p>
         <p>
           Panduan ini diterbitkan Direktorat Pembelajaran dan Kemahasiswaan,
