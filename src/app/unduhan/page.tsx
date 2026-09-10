@@ -59,7 +59,7 @@ export default function UnduhanPage() {
                     download
                     className="rounded-full bg-veteran-700 px-4 py-1.5 text-xs font-semibold text-white hover:bg-veteran-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-veteran-700"
                   >
-                    PDF ↓
+                    Unduh PDF
                   </a>
                 </td>
               </tr>

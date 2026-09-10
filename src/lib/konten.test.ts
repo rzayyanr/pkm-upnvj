@@ -8,8 +8,8 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 
 /*
   Test perilaku LUAR modul data (sesuai Testing Decisions di PRD):
-  jalur sukses, gagal database → fallback, data kosong → fallback,
-  dan tidak terkonfigurasi → fallback. Menggunakan klien tiruan , 
+  jalur sukses, gagal database menjadi fallback, data kosong menjadi fallback,
+  dan tidak terkonfigurasi menjadi fallback. Menggunakan klien tiruan , 
   tidak menyentuh Supabase sungguhan.
 */
 
@@ -66,19 +66,19 @@ test("pengumuman: jalur sukses mengembalikan data", async () => {
   if (hasil.ok) assert.equal(hasil.data[0].judul, "Uji");
 });
 
-test("pengumuman: gagal database → fallback", async () => {
+test("pengumuman: gagal database menjadi fallback", async () => {
   const { klien } = buatKlienPalsu({ data: null, error: { message: "koneksi gagal" } });
   const hasil = await ambilPengumumanTerbaru(klien);
   assert.deepEqual(hasil, { ok: false, alasan: "gagal_database" });
 });
 
-test("pengumuman: data kosong → fallback data_kosong", async () => {
+test("pengumuman: data kosong menjadi fallback data_kosong", async () => {
   const { klien } = buatKlienPalsu({ data: [], error: null });
   const hasil = await ambilPengumumanTerbaru(klien);
   assert.deepEqual(hasil, { ok: false, alasan: "data_kosong" });
 });
 
-test("pengumuman: klien null → fallback tidak_terkonfigurasi", async () => {
+test("pengumuman: klien null menjadi fallback tidak_terkonfigurasi", async () => {
   const hasil = await ambilPengumumanTerbaru(null);
   assert.deepEqual(hasil, { ok: false, alasan: "tidak_terkonfigurasi" });
 });

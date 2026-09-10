@@ -68,8 +68,8 @@ export const pkmRsh: Bidang = {
       "Lampiran, biodata, justifikasi anggaran, pembagian tugas, surat pernyataan, hasil uji similaritas",
     ],
     catatanKhas: [
-      "Metode survei → lampirkan kuesioner lengkap; metode wawancara → lampirkan pedoman wawancara.",
-      "Mixed method → jelaskan desain terpilih (sequential explanatory/exploratory, convergent), tahapan pengumpulan data, dan strategi triangulasi/integrasi.",
+      "Metode survei dilengkapi kuesioner lengkap di lampiran; metode wawancara dilengkapi pedoman wawancara.",
+      "Mixed method: jelaskan desain terpilih (sequential explanatory/exploratory, convergent), tahapan pengumpulan data, dan strategi triangulasi/integrasi.",
       "Kualitas data: uji validitas-reliabilitas (kuantitatif) atau trustworthiness, triangulasi, member checking, audit trail, refleksivitas (kualitatif).",
       "Etika riset sosial wajib ada bila melibatkan manusia/data pribadi: informed consent, kerahasiaan/anonimitas, keamanan data, hak berhenti berpartisipasi.",
     ],

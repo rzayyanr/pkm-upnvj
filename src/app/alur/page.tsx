@@ -86,7 +86,7 @@ export default async function AlurPage() {
           nomor={3}
           title="Penilaian 2 tahap"
           status="selesai"
-          period="Tahap 1 administrasi → Tahap 2 substansi"
+          period="Tahap 1 administrasi, lalu Tahap 2 substansi"
         >
           Tahap 1: kesesuaian administrasi & format. Tahap 2: kreativitas,
           kekinian topik, tantangan intelektual (2 penilai).
