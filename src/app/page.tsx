@@ -17,15 +17,10 @@ export default function Home() {
             jadwal terkini, dan tips proposal dalam satu tempat.
           </p>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/bidang" size="lg" className="bg-white text-veteran-800 hover:bg-veteran-50">
+            <ButtonLink href="/bidang" variant="white" size="lg">
               Pilih bidang PKM
             </ButtonLink>
-            <ButtonLink
-              href="/alur"
-              variant="secondary"
-              size="lg"
-              className="border-white text-white hover:bg-veteran-700"
-            >
+            <ButtonLink href="/alur" variant="onDark" size="lg">
               Lihat alur &amp; jadwal
             </ButtonLink>
           </div>
@@ -130,14 +125,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href="/unduhan" className="bg-white text-veteran-800 hover:bg-veteran-50">
+              <ButtonLink href="/unduhan" variant="white">
                 Unduh panduan
               </ButtonLink>
-              <ButtonLink
-                href="/tips"
-                variant="secondary"
-                className="border-white text-white hover:bg-veteran-700"
-              >
+              <ButtonLink href="/tips" variant="onDark">
                 Tips proposal
               </ButtonLink>
             </div>

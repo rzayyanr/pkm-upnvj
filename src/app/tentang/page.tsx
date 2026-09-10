@@ -143,10 +143,10 @@ export default function TentangPage() {
           alurnya dari penyusunan proposal sampai PIMNAS.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <ButtonLink href="/bidang" className="bg-white text-veteran-800 hover:bg-veteran-50">
+          <ButtonLink href="/bidang" variant="white">
             Lihat 10 bidang
           </ButtonLink>
-          <ButtonLink href="/alur" variant="secondary" className="border-white text-white hover:bg-veteran-700">
+          <ButtonLink href="/alur" variant="onDark">
             Lihat alur PKM
           </ButtonLink>
         </div>

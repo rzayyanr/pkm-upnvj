@@ -238,19 +238,10 @@ export default async function DetailBidangPage({
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <ButtonLink
-              href={bidang.filePanduan}
-              size="lg"
-              className="bg-white text-veteran-800 hover:bg-veteran-50"
-            >
+            <ButtonLink href={bidang.filePanduan} variant="white" size="lg">
               Unduh PDF {bidang.kode}
             </ButtonLink>
-            <ButtonLink
-              href="/alur"
-              variant="secondary"
-              size="lg"
-              className="border-white text-white hover:bg-veteran-700"
-            >
+            <ButtonLink href="/alur" variant="onDark" size="lg">
               Lihat alur PKM
             </ButtonLink>
           </div>
