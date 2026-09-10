@@ -5,7 +5,7 @@ type ButtonVariant = "primary" | "secondary" | "ghost";
 type ButtonSize = "sm" | "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2 font-medium rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-veteran-700 disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex touch-manipulation items-center justify-center gap-2 font-medium rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-veteran-700 disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<ButtonVariant, string> = {
   primary: "bg-veteran-700 text-white hover:bg-veteran-800",

@@ -15,12 +15,12 @@ export function SectionHeading({
     <div className="max-w-2xl">
       <Tag
         id={id}
-        className="font-heading text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl"
+        className="scroll-mt-24 font-heading text-2xl font-bold tracking-tight text-balance text-zinc-900 sm:text-3xl"
       >
         {title}
       </Tag>
       {lead ? (
-        <p className="mt-3 text-base leading-7 text-zinc-600">{lead}</p>
+        <p className="mt-3 text-base leading-7 text-pretty text-zinc-600">{lead}</p>
       ) : null}
     </div>
   );

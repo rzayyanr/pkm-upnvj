@@ -16,6 +16,7 @@ export default function KomponenPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
       <SectionHeading
+        as="h1"
         title="Demo Komponen"
         lead="Halaman internal untuk menilai design system sebelum konten dibangun. Setiap komponen memakai contoh konten sungguhan."
       />
@@ -137,10 +138,20 @@ export default function KomponenPage() {
         </h2>
         <div className="max-w-md space-y-4">
           <Field label="Judul pengumuman" htmlFor="demo-judul" hint="Maksimal 120 karakter.">
-            <Input id="demo-judul" placeholder="Contoh: Pendaftaran PKM 2027 dibuka" />
+            <Input
+              id="demo-judul"
+              name="judul"
+              autoComplete="off"
+              placeholder="Contoh: Pendaftaran PKM 2027 dibuka…"
+            />
           </Field>
           <Field label="Isi pengumuman" htmlFor="demo-isi">
-            <Textarea id="demo-isi" rows={4} placeholder="Tulis isi pengumuman di sini…" />
+            <Textarea
+              id="demo-isi"
+              name="isi"
+              rows={4}
+              placeholder="Tulis isi pengumuman di sini…"
+            />
           </Field>
           <Button>Simpan pengumuman</Button>
         </div>

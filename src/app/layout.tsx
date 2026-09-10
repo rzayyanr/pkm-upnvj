@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -24,6 +24,10 @@ export const metadata: Metadata = {
     "Pusat informasi Program Kreativitas Mahasiswa (PKM) untuk mahasiswa UPN Veteran Jakarta: 10 bidang PKM, tahapan, tema, tips proposal, dan panduan resmi 2026.",
 };
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -31,8 +35,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
+        <a
+          href="#konten-utama"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-veteran-700 focus:px-4 focus:py-2 focus:text-white"
+        >
+          Langsung ke konten utama
+        </a>
         <Navbar />
-        <main className="flex flex-1 flex-col">{children}</main>
+        <main id="konten-utama" className="flex flex-1 flex-col">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

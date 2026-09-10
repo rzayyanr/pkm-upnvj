@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <section className="bg-veteran-800 text-white">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-20 sm:px-6 sm:py-28">
-          <h1 className="max-w-2xl font-heading text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+          <h1 className="max-w-2xl font-heading text-4xl font-bold leading-tight tracking-tight text-balance sm:text-5xl">
             Semua yang perlu kamu tahu tentang PKM di UPNVJ
           </h1>
           <p className="max-w-xl text-lg leading-8 text-veteran-100">
