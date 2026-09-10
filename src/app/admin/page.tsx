@@ -72,6 +72,19 @@ export default async function HalamanAdmin() {
         dalam maksimal 5 menit.
       </p>
 
+      <p className="mt-3 text-sm">
+        <a
+          href="/admin/ekspor"
+          className="font-medium text-veteran-700 underline-offset-2 hover:underline"
+        >
+          Unduh cadangan data (JSON)
+        </a>{" "}
+        <span className="text-zinc-500">
+          rutinlah sekali seminggu; berkas menyimpan seluruh pengumuman,
+          agenda, kontak, dan tautan.
+        </span>
+      </p>
+
       <div className="mt-10 space-y-12 pb-16">
         <PengumumanPanel daftar={pengumuman} />
         <AgendaPanel daftar={agenda} />

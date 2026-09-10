@@ -5,6 +5,7 @@ Website pusat informasi **Program Kreativitas Mahasiswa (PKM)** untuk lingkungan
 tentang PKM: 10 bidang, tahapan pendaftaran, tema, tips proposal, panduan resmi,
 dan info terkini kampus.
 
+> **Status: v1.0**, live di https://pkm-upnvj.vercel.app
 > Proyek portofolio, proses lengkapnya terdokumentasi dari riset hingga deployment.
 
 ## Tumpukan Teknologi
@@ -21,6 +22,8 @@ dan info terkini kampus.
 | [docs/BRD.md](docs/BRD.md) | Business Requirements, stakeholder, KPI, risiko |
 | [docs/FRS-SRS.md](docs/FRS-SRS.md) | Syarat fungsional & non-fungsional |
 | [docs/ERD.md](docs/ERD.md) | Skema database (Supabase) |
+| [docs/RUNBOOK.md](docs/RUNBOOK.md) | Panduan operasional pemelihara (deploy, backup, pemulihan) |
+| [docs/MANUAL-ADMIN.md](docs/MANUAL-ADMIN.md) | Panduan panel admin untuk pengelola konten |
 
 ## Menjalankan Lokal
 
@@ -29,7 +32,14 @@ npm install
 npm run dev
 ```
 
-Buka http://localhost:3000. Lihat `AGENTS.md` untuk aturan kontribusi dan konteks proyek.
+Buka http://localhost:3000. Uji modul data: `npm test`.
+Lihat `AGENTS.md` untuk aturan kontribusi dan konteks proyek.
+
+## Panel Admin
+
+Pengelola konten masuk lewat `/admin/login` menggunakan akun Google yang
+terdaftar di tabel `profil_admin`. Cara pemakaiannya ada di
+[docs/MANUAL-ADMIN.md](docs/MANUAL-ADMIN.md).
 
 ## Sumber Konten
 
