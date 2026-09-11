@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ambilKontak, ambilTautanCepat } from "@/lib/konten";
 import type { Kontak, TautanCepat } from "@/lib/konten";
@@ -42,9 +43,18 @@ export async function Footer() {
     <footer className="mt-auto border-t border-zinc-200 bg-zinc-50">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-heading text-lg font-bold text-zinc-900">
-            PKM <span className="text-veteran-700">UPNVJ</span>
-          </p>
+          <div className="flex items-center gap-2.5">
+            <Image
+              src="/logo-upnvj.png"
+              alt="Lambang UPN Veteran Jakarta"
+              width={28}
+              height={28}
+              className="h-7 w-auto object-contain"
+            />
+            <p className="font-heading text-lg font-bold text-zinc-900">
+              PKM <span className="text-veteran-700">UPNVJ</span>
+            </p>
+          </div>
           <p className="mt-3 max-w-xs text-sm leading-6 text-zinc-600">
             Pusat informasi Program Kreativitas Mahasiswa untuk mahasiswa UPN
             Veteran Jakarta.

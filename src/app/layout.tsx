@@ -16,12 +16,32 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pkm-upnvj.vercel.app"),
   title: {
     default: "PKM UPNVJ, Semua yang Perlu Kamu Tahu tentang PKM",
     template: "%s | PKM UPNVJ",
   },
   description:
     "Pusat informasi Program Kreativitas Mahasiswa (PKM) untuk mahasiswa UPN Veteran Jakarta: 10 bidang PKM, tahapan, tema, tips proposal, dan panduan resmi 2026.",
+  openGraph: {
+    title: "PKM UPNVJ, Semua yang Perlu Kamu Tahu tentang PKM",
+    description:
+      "Pusat informasi Program Kreativitas Mahasiswa (PKM) untuk mahasiswa UPN Veteran Jakarta: 10 bidang PKM, tahapan, tema, tips proposal, dan panduan resmi 2026.",
+    url: "https://pkm-upnvj.vercel.app",
+    siteName: "PKM UPNVJ",
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PKM UPNVJ, Semua yang Perlu Kamu Tahu tentang PKM",
+    description:
+      "Pusat informasi Program Kreativitas Mahasiswa (PKM) untuk mahasiswa UPN Veteran Jakarta: 10 bidang PKM, tahapan, tema, tips proposal, dan panduan resmi 2026.",
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = {

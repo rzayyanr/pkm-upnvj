@@ -1,9 +1,9 @@
-# RUNBOOK — Panduan Operasional Website PKM UPNVJ
+# RUNBOOK: Panduan Operasional Website PKM UPNVJ
 
 Panduan untuk pemelihara website (pemilik proyek / pengurus penerus).
 Untuk pengelola konten sehari-hari, baca [MANUAL-ADMIN.md](MANUAL-ADMIN.md).
 
-Terakhir diperbarui: 2026-09-11 (rilis v1.0)
+Terakhir diperbarui: 2026-09-11 (rilis v1.1)
 
 ---
 

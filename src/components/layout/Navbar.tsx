@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -36,12 +37,14 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <span
-            aria-hidden
-            className="flex h-8 w-8 items-center justify-center rounded-lg bg-veteran-700 font-heading text-sm font-bold text-white"
-          >
-            P
-          </span>
+          <Image
+            src="/logo-upnvj.png"
+            alt="Lambang UPN Veteran Jakarta"
+            width={34}
+            height={34}
+            className="h-8.5 w-auto object-contain"
+            priority
+          />
           <span className="font-heading text-lg font-bold tracking-tight text-zinc-900">
             PKM <span className="text-veteran-700">UPNVJ</span>
           </span>

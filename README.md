@@ -5,7 +5,7 @@ Website pusat informasi **Program Kreativitas Mahasiswa (PKM)** untuk lingkungan
 tentang PKM: 10 bidang, tahapan pendaftaran, tema, tips proposal, panduan resmi,
 dan info terkini kampus.
 
-> **Status: v1.0**, live di https://pkm-upnvj.vercel.app
+> **Status: v1.1**, live di https://pkm-upnvj.vercel.app
 > Proyek portofolio, proses lengkapnya terdokumentasi dari riset hingga deployment.
 
 ## Tumpukan Teknologi
@@ -18,6 +18,7 @@ dan info terkini kampus.
 
 | Dokumen | Isi |
 |---|---|
+| [CONTEXT.md](CONTEXT.md) | Glosarium istilah domain resmi PKM UPNVJ |
 | [docs/PRD.md](docs/PRD.md) | Product Requirements Document (dokumen induk) |
 | [docs/BRD.md](docs/BRD.md) | Business Requirements, stakeholder, KPI, risiko |
 | [docs/FRS-SRS.md](docs/FRS-SRS.md) | Syarat fungsional & non-fungsional |
